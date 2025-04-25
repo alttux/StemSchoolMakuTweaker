@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -133,6 +134,9 @@ namespace MakuTweaker
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en"; 
                         break;
@@ -259,9 +263,9 @@ namespace MakuTweaker
                 {
                     label3.Text = "Хвилини / Години: " + Math.Round(value, 2);
                 }
-                else if (Properties.Settings.Default.languageCode == "bl")
+                else if (Properties.Settings.Default.languageCode == "es")
                 {
-                    label3.Text = "Хвилини / Години: " + Math.Round(value, 2);
+                    label3.Text = "Minutos / Horas: " + Math.Round(value, 2);
                 }
             }
             catch
@@ -278,9 +282,9 @@ namespace MakuTweaker
                 {
                     label3.Text = "Хвилини / Години: 0";
                 }
-                else if (Properties.Settings.Default.languageCode == "bl")
+                else if (Properties.Settings.Default.languageCode == "es")
                 {
-                    label3.Text = "Хвилини / Години: 0";
+                    label3.Text = "Minutos / Horas: 0";
                 }
             }
         }

@@ -1,0 +1,581 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|c:\\users\\rm\\desktop\\makutweaker\\makutweaker\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\LocaleInitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:LocaleInitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:Form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544C2905-A98E-4F32-8642-60D06E3DF740}|MakuTweaker.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form4.cs",
+              "RelativeToolTip": "Form4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:29:37.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form4.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form4.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form4.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:29:31.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T00:06:45.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LocaleInitialize.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\LocaleInitialize.cs",
+              "RelativeDocumentMoniker": "LocaleInitialize.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\LocaleInitialize.cs",
+              "RelativeToolTip": "LocaleInitialize.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwHUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:45:15.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAADwv68AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:43:57.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T01:53:02.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAowB4BAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:28:30.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form5.cs",
+              "RelativeDocumentMoniker": "Form5.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form5.cs",
+              "RelativeToolTip": "Form5.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAIwM4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:29:50.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Form6.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form6.cs",
+              "RelativeDocumentMoniker": "Form6.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form6.cs",
+              "RelativeToolTip": "Form6.cs",
+              "ViewState": "AgIAAMkBAAAAAAAAAAAowOcBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:30:19.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Form7.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form7.cs",
+              "RelativeDocumentMoniker": "Form7.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form7.cs",
+              "RelativeToolTip": "Form7.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAUwOAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T02:21:59.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Form8.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form8.cs",
+              "RelativeDocumentMoniker": "Form8.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form8.cs",
+              "RelativeToolTip": "Form8.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAwwHAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:36:58.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Form9.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form9.cs",
+              "RelativeDocumentMoniker": "Form9.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form9.cs",
+              "RelativeToolTip": "Form9.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAgwFUBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T02:00:40.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Form10.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form10.cs",
+              "RelativeDocumentMoniker": "Form10.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form10.cs",
+              "RelativeToolTip": "Form10.cs",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAgwHwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:09:25.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Form11.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form11.cs",
+              "RelativeDocumentMoniker": "Form11.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form11.cs",
+              "RelativeToolTip": "Form11.cs",
+              "ViewState": "AgIAAIEEAAAAAAAAAAAgwJIEAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T02:08:23.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Form12.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form12.cs",
+              "RelativeDocumentMoniker": "Form12.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form12.cs",
+              "RelativeToolTip": "Form12.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwKsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T04:38:24.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form13.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form13.cs",
+              "RelativeDocumentMoniker": "Form13.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form13.cs",
+              "RelativeToolTip": "Form13.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAgwHcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:59:27.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form14.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form14.cs",
+              "RelativeDocumentMoniker": "Form14.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form14.cs",
+              "RelativeToolTip": "Form14.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAIwL8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T04:28:08.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form15.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form15.cs",
+              "RelativeDocumentMoniker": "Form15.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form15.cs",
+              "RelativeToolTip": "Form15.cs",
+              "ViewState": "AgIAAAoDAAAAAAAAAAAowBwDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T21:16:23.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form16.cs",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form16.cs",
+              "RelativeDocumentMoniker": "Form16.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form16.cs",
+              "RelativeToolTip": "Form16.cs",
+              "ViewState": "AgIAAOsCAAAAAAAAAAAqwOECAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T17:57:30.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:43:55.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T03:18:03.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:28:29.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form5.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form5.cs",
+              "RelativeDocumentMoniker": "Form5.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form5.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form5.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:29:49.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form6.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form6.cs",
+              "RelativeDocumentMoniker": "Form6.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form6.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form6.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:30:18.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form7.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form7.cs",
+              "RelativeDocumentMoniker": "Form7.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form7.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form7.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T04:11:10.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form8.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form8.cs",
+              "RelativeDocumentMoniker": "Form8.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form8.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form8.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T05:49:52.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form9.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form9.cs",
+              "RelativeDocumentMoniker": "Form9.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form9.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form9.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T01:56:50.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form10.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form10.cs",
+              "RelativeDocumentMoniker": "Form10.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form10.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form10.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T16:01:45.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form11.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form11.cs",
+              "RelativeDocumentMoniker": "Form11.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form11.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form11.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:17:59.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form12.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form12.cs",
+              "RelativeDocumentMoniker": "Form12.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form12.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form12.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T04:37:29.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form13.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form13.cs",
+              "RelativeDocumentMoniker": "Form13.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form13.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form13.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:53:58.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form14.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form14.cs",
+              "RelativeDocumentMoniker": "Form14.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form14.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form14.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T03:56:14.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Form15.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form15.cs",
+              "RelativeDocumentMoniker": "Form15.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form15.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form15.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T21:06:43.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form16.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form16.cs",
+              "RelativeDocumentMoniker": "Form16.cs",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\Form16.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form16.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T17:49:00.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\Rm\\Desktop\\MakuTweaker\\MakuTweaker\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2024-10-15T15:56:50.887Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

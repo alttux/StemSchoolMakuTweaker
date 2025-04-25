@@ -102,7 +102,6 @@ namespace MakuTweaker
             { "Microsoft.MSPaint", checkBox15 },
             { "Microsoft.BingWeather", checkBox16 },
             { "Microsoft.549981C3F5F10", checkBox8 },
-            { "Microsoft.XboxApp", checkBox13 },
             { "Microsoft.GetHelp", checkBox9 },
             { "Microsoft.WindowsCamera", checkBox12 },
             { "Microsoft.WindowsMaps", checkBox18 },
@@ -175,7 +174,6 @@ namespace MakuTweaker
             checkBox10.Text = localization["checkBox10"];
             checkBox11.Text = localization["checkBox11"];
             checkBox12.Text = localization["checkBox12"];
-            checkBox13.Text = localization["checkBox13"];
             checkBox14.Text = localization["checkBox14"];
             checkBox15.Text = localization["checkBox15"];
             checkBox16.Text = localization["checkBox16"];
@@ -230,6 +228,9 @@ namespace MakuTweaker
                         break;
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
+                        break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
                         break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
@@ -359,7 +360,6 @@ namespace MakuTweaker
             if (checkBox10.Checked) selectedUWP.Add(localization["checkBox10"]);
             if (checkBox11.Checked) selectedUWP.Add(localization["checkBox11"]);
             if (checkBox12.Checked) selectedUWP.Add(localization["checkBox12"]);
-            if (checkBox13.Checked) selectedUWP.Add(localization["checkBox13"]);
             if (checkBox14.Checked) selectedUWP.Add(localization["checkBox14"]);
             if (checkBox15.Checked) selectedUWP.Add(localization["checkBox15"]);
             if (checkBox16.Checked) selectedUWP.Add(localization["checkBox16"]);
@@ -386,100 +386,106 @@ namespace MakuTweaker
             }
         }
 
+        async Task StartHiddenPowerShellProcess(string command)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = "powershell.exe",
+                Arguments = $"-Command \"& {{{command}}}\"",
+                WindowStyle = ProcessWindowStyle.Hidden,
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
+
+            Process process = Process.Start(startInfo);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.ZuneVideo\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.ZuneVideo\" | Remove-AppxPackage");
             }
-            if (checkBox6.Checked == true)
+            if (checkBox6.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.ZuneMusic\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.ZuneMusic\" | Remove-AppxPackage");
             }
-            if(checkBox2.Checked == true)
+            if (checkBox2.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.MicrosoftStickyNotes\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.MicrosoftStickyNotes\" | Remove-AppxPackage");
             }
-            if(checkBox4.Checked == true)
+            if (checkBox4.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.MixedReality.Portal\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.MixedReality.Portal\" | Remove-AppxPackage");
             }
-            if(checkBox3.Checked == true)
+            if (checkBox3.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.MicrosoftSolitaireCollection\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.MicrosoftSolitaireCollection\" | Remove-AppxPackage");
             }
-            if(checkBox5.Checked == true)
+            if (checkBox5.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Messaging\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.Messaging\" | Remove-AppxPackage");
             }
-            if(checkBox10.Checked == true)
+            if (checkBox10.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.WindowsFeedbackHub\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.WindowsFeedbackHub\" | Remove-AppxPackage");
             }
-            if(checkBox11.Checked == true)
+            if (checkBox11.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.PeopleExperienceHost\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.People\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.windowscommunicationsapps\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.PeopleExperienceHost\" | Remove-AppxPackage");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.People\" | Remove-AppxPackage");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.windowscommunicationsapps\" | Remove-AppxPackage");
             }
-            if(checkBox7.Checked == true)
+            if (checkBox7.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.BingNews\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.BingNews\" | Remove-AppxPackage");
             }
-            if(checkBox15.Checked == true)
+            if (checkBox15.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Microsoft3DViewer\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.3DBuilder\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Print3D\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.MSPaint\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.Microsoft3DViewer\" | Remove-AppxPackage");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.3DBuilder\" | Remove-AppxPackage");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.MSPaint\" | Remove-AppxPackage");
             }
-            if(checkBox16.Checked == true)
+            if (checkBox16.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.BingWeather\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.BingWeather\" | Remove-AppxPackage");
             }
-            if(checkBox8.Checked == true)
+            if (checkBox8.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.549981C3F5F10\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.549981C3F5F10\" | Remove-AppxPackage");
             }
-            if(checkBox13.Checked == true)
+            if (checkBox9.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.XboxApp\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.GamingApp\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.XboxIdentityProvider\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.XboxSpeechToTextOverlay\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.GetHelp\" | Remove-AppxPackage");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.Getstarted\" | Remove-AppxPackage");
             }
-            if(checkBox9.Checked == true)
+            if (checkBox12.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.GetHelp\" | Remove-AppxPackage}\"");
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Getstarted\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.WindowsCamera\" | Remove-AppxPackage");
             }
-            if(checkBox12.Checked == true)
+            if (checkBox18.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.WindowsCamera\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.WindowsMaps\" | Remove-AppxPackage");
             }
-            if(checkBox18.Checked == true)
+            if (checkBox17.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.WindowsMaps\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.Office.OneNote\" | Remove-AppxPackage");
             }
-            if(checkBox17.Checked == true)
+            if (checkBox14.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Office.OneNote\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.YourPhone\" | Remove-AppxPackage");
             }
-            if(checkBox14.Checked == true)
+            if (checkBox19.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.YourPhone\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.Windows.DevHome\" | Remove-AppxPackage");
             }
-            if (checkBox19.Checked == true)
+            if (checkBox20.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.Windows.DevHome\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Clipchamp.Clipchamp\" | Remove-AppxPackage");
             }
-            if (checkBox20.Checked == true)
+            if (checkBox21.Checked)
             {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Clipchamp.Clipchamp\" | Remove-AppxPackage}\"");
-            }
-            if (checkBox21.Checked == true)
-            {
-                Process.Start("powershell.exe", "-Command \"& {Get-AppxPackage -name \"Microsoft.PowerAutomateDesktop\" | Remove-AppxPackage}\"");
+                StartHiddenPowerShellProcess("Get-AppxPackage -name \"Microsoft.PowerAutomateDesktop\" | Remove-AppxPackage");
             }
             UpdateLabelInfo();
         }
@@ -508,7 +514,6 @@ namespace MakuTweaker
             checkBox11.Checked = false;
             checkBox17.Checked = false;
             checkBox14.Checked = false;
-            checkBox13.Checked = false;
             checkBox1.Checked = false;
             checkBox6.Checked = false;
             checkBox2.Checked = false;
@@ -544,7 +549,6 @@ namespace MakuTweaker
             checkBox11.Checked = true;
             checkBox17.Checked = true;
             checkBox14.Checked = true;
-            checkBox13.Checked = false;
             checkBox1.Checked = false;
             checkBox6.Checked = false;
             checkBox2.Checked = false;
@@ -580,7 +584,6 @@ namespace MakuTweaker
             checkBox11.Checked = true;
             checkBox17.Checked = true;
             checkBox14.Checked = true;
-            checkBox13.Checked = true;
             checkBox1.Checked = true;
             checkBox6.Checked = true;
             checkBox2.Checked = true;

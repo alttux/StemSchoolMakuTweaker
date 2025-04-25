@@ -180,6 +180,10 @@ namespace MakuTweaker
                         Properties.Settings.Default.languageCode = "en";
                         comboBox1.SelectedIndex = 1;
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        comboBox1.SelectedIndex = 3;
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
                         comboBox1.SelectedIndex = 1;
@@ -323,10 +327,10 @@ namespace MakuTweaker
                     Properties.Settings.Default.languageCode = "ua";
                     break;
                 case 3:
-                    Properties.Settings.Default.languageCode = "kz";
+                    Properties.Settings.Default.languageCode = "es";
                     break;
                 case 4:
-                    Properties.Settings.Default.languageCode = "bl";
+                    Properties.Settings.Default.languageCode = "kz";
                     break;
                 default:
                     Properties.Settings.Default.languageCode = "en";
@@ -382,6 +386,11 @@ namespace MakuTweaker
                     Properties.Settings.Default.Save();
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 3;
         }
     }
 }

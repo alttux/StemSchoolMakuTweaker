@@ -187,6 +187,9 @@ namespace MakuTweaker
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
                         break;
@@ -616,6 +619,11 @@ namespace MakuTweaker
                     Properties.Settings.Default.Save();
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start("ms-windows-store://pdp/?productId=9WZDNCRD1HKW");
         }
     }
 }

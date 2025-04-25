@@ -107,6 +107,7 @@ namespace MakuTweaker
             settingsToolStripMenuItem.Text = localization["settingsToolStripMenuItem"];
             returnToMainWindowToolStripMenuItem.Text = localization["returnToMainWindowToolStripMenuItem"];
             restartExplorerToolStripMenuItem.Text = localization["restartExplorerToolStripMenuItem"];
+            rebootRequiredToolStripMenuItem.Text = localization["rebootRequiredToolStripMenuItem"];
             chooseAColorToolStripMenuItem.Text = localization["chooseAColorToolStripMenuItem"];
 
             labelinfo.Text = localization["labelinfo"];
@@ -196,6 +197,9 @@ namespace MakuTweaker
                         break;
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
+                        break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
                         break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
@@ -840,13 +844,10 @@ namespace MakuTweaker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.category = 3;
-            Properties.Settings.Default.form1pos = this.Location;
-            Properties.Settings.Default.Save();
-            Form1 f1 = new Form1();
-            f1.StartPosition = FormStartPosition.Manual;
-            f1.Location = this.Location;
-            f1.Show();
+            Form16 f16 = new Form16();
+            f16.StartPosition = FormStartPosition.Manual;
+            f16.Location = this.Location;
+            f16.Show();
             this.Hide();
         }
 
@@ -1267,17 +1268,7 @@ namespace MakuTweaker
 
         private void Form11_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
-        }
 
-        private void hidepanel_Tick(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-        }
-
-        private void hidepanel1_Tick(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
         }
 
         private void rebootRequiredToolStripMenuItem_Click(object sender, EventArgs e)

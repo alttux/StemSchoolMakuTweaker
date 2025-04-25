@@ -167,12 +167,10 @@ namespace MakuTweaker
                 R5S1.Enabled = true;
                 R5S2.Enabled = true;
         }
-
-
         private int currentCategory = 1;
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.language == false)
+            if (Properties.Settings.Default.language == false)
             {
                 string systemLanguage = CultureInfo.CurrentCulture.Name;
                 switch (systemLanguage)
@@ -185,6 +183,9 @@ namespace MakuTweaker
                         break;
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
+                        break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
                         break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
@@ -341,8 +342,6 @@ namespace MakuTweaker
                 button15.Text = localization["button15"];
                 button16.Text = localization["button16"];
                 button17.Text = localization["button17"];
-
-
 
                 R1S1.Visible = true;
                 R1S2.Visible = true;
@@ -648,56 +647,6 @@ namespace MakuTweaker
             try
             {
                 category = 4;
-                var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                var localization = Localization.LoadLocalization(languageCode, category);
-                this.Text = localization["title"];
-                categoryToolStripMenuItem.Text = localization["categoryToolStripMenuItem"];
-                themeToolStripMenuItem.Text = localization["themeToolStripMenuItem"];
-                aboutToolStripMenuItem.Text = localization["aboutToolStripMenuItem"];
-                moveToCenterToolStripMenuItem.Text = localization["moveToCenterToolStripMenuItem"];
-                settingsToolStripMenuItem.Text = localization["settingsToolStripMenuItem"];
-                restartExplorerToolStripMenuItem.Text = localization["restartExplorerToolStripMenuItem"];
-                shutdownAfterTimeToolStripMenuItem.Text = localization["shutdownAfterTimeToolStripMenuItem"];
-                removeUWPAppsToolStripMenuItem.Text = localization["removeUWPAppsToolStripMenuItem"];
-                windowsQuickSetupToolStripMenuItem.Text = localization["windowsQuickSetupToolStripMenuItem"];
-                windowsActivationToolStripMenuItem.Text = localization["windowsActivationToolStripMenuItem"];
-                chooseAColorToolStripMenuItem.Text = localization["chooseAColorToolStripMenuItem"];
-
-                labelcat.Text = localization["labelcat"];
-                labelinfo.Text = localization["labelinfo"];
-                P1.Text = localization["P1"];
-                P2.Text = localization["P2"];
-                P3.Text = localization["P3"];
-                P4.Text = localization["P4"];
-                P5.Text = localization["P5"];
-                R1S1.Text = localization["dis"];
-                R1S2.Text = localization["ena"];
-                R2S1.Text = localization["dis"];
-                R2S2.Text = localization["ena"];
-                R3S1.Text = localization["dis"];
-                R3S2.Text = localization["ena"];
-                R4S1.Text = localization["dis"];
-                R4S2.Text = localization["ena"];
-                R5S1.Text = localization["pause"];
-
-                button1.Text = localization["button1"];
-                button2.Text = localization["button2"];
-                button3.Text = localization["button3"];
-                button4.Text = localization["button4"];
-                button5.Text = localization["button5"];
-                button6.Text = localization["button6"];
-                button7.Text = localization["button7"];
-                button8.Text = localization["button8"];
-                button9.Text = localization["button9"];
-                button10.Text = localization["button10"];
-                button11.Text = localization["button11"];
-                button12.Text = localization["button12"];
-                button13.Text = localization["button13"];
-                button14.Text = localization["button14"];
-                button15.Text = localization["button15"];
-                button16.Text = localization["button16"];
-                button17.Text = localization["button17"];
-
                 R1S1.Visible = true;
                 R1S2.Visible = true;
                 R2S1.Visible = true;
@@ -707,7 +656,7 @@ namespace MakuTweaker
                 R4S1.Visible = true;
                 R4S2.Visible = true;
                 R5S1.Visible = true;
-                R5S2.Visible = false;
+                R5S2.Visible = true;
                 R6S1.Visible = false;
                 R6S2.Visible = false;
                 R7S1.Visible = false;
@@ -904,10 +853,32 @@ namespace MakuTweaker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            category = 3;
-            Properties.Settings.Default.category = 3;
-            Properties.Settings.Default.Save();
-            c4(category);
+            try
+            {
+                category = 3;
+                Form16 f16 = new Form16();
+                f16.StartPosition = FormStartPosition.Manual;
+                f16.Location = this.Location;
+                f16.Show();
+                this.Hide();
+            }
+            catch
+            {
+                DialogResult msg = MessageBox.Show("MISSING LANG 0a04\nReinstall MakuTweaker Language Files And Try Again.", "MakuTweaker Crash", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+                if (msg == DialogResult.Abort)
+                {
+                    System.Windows.Forms.Application.Exit();
+                }
+                if (msg == DialogResult.Retry)
+                {
+                    category = 3;
+                    Form16 f16 = new Form16();
+                    f16.StartPosition = FormStartPosition.Manual;
+                    f16.Location = this.Location;
+                    f16.Show();
+                    this.Hide();
+                }
+            }
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -1189,7 +1160,6 @@ namespace MakuTweaker
                 }
             }
         }
-
         private void R1S1_Click(object sender, EventArgs e)
         {
             if (category == 0)
@@ -1270,22 +1240,6 @@ namespace MakuTweaker
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced").SetValue("TaskbarDa", 0);
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced").SetValue("TaskbarMn", 0);
 
-                }
-                catch
-                {
-
-                }
-            }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd1", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU").SetValue("NoAutoUpdate", 1);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("DoNotConnectToWindowsUpdateInternetLocations", 1);
                 }
                 catch
                 {
@@ -1389,22 +1343,6 @@ namespace MakuTweaker
 
                 }
             }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd11", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU").SetValue("NoAutoUpdate", 0);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("DoNotConnectToWindowsUpdateInternetLocations", 0);
-                }
-                catch
-                {
-
-                }
-            }
             if (category == 7)
             {
                 Process.Start("cmd.exe", "/c \"reg delete HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Serialize /v Startupdelayinmsec /f\"");
@@ -1457,24 +1395,6 @@ namespace MakuTweaker
                     localization.TryGetValue("bigmini", out string text);
                     labelinfo.Text = text;
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband").SetValue("MinThumbSizePX", 500);
-                }
-                catch
-                {
-
-                }
-            }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd2", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("DisableOSUpgrade", 1);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\WindowsStore").SetValue("DisableOSUpgrade", 1);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\WindowsUpdate\OSUpgrade").SetValue("AllowOSUpgrade", 0);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\WindowsUpdate\OSUpgrade").SetValue("ReservationsAllowed", 0);
                 }
                 catch
                 {
@@ -1534,24 +1454,6 @@ namespace MakuTweaker
                     localization.TryGetValue("bigmini1", out string text);
                     labelinfo.Text = text;
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband").SetValue("MinThumbSizePX", 170);
-                }
-                catch
-                {
-
-                }
-            }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd22", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("DisableOSUpgrade", 0);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\WindowsStore").SetValue("DisableOSUpgrade", 0);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\WindowsUpdate\OSUpgrade").SetValue("AllowOSUpgrade", 1);
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\WindowsUpdate\OSUpgrade").SetValue("ReservationsAllowed", 1);
                 }
                 catch
                 {
@@ -1620,22 +1522,6 @@ namespace MakuTweaker
 
                 }
             }
-            if (category == 3)
-            {
-                try
-                {
-                    Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel").SetValue("{20D04FE0-3AEA-1069-A2D8-08002B30309D}", 0);
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("drv", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("ExcludeWUDriversInQualityUpdate", 1);
-                }
-                catch
-                {
-
-                }
-            }
             if (category == 7)
             {
                 Process.Start("cmd.exe", "/c \"reg.exe add \"HKCU\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32\" /f /ve\"");
@@ -1695,21 +1581,6 @@ namespace MakuTweaker
 
                 }
             }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("drv1", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate").SetValue("ExcludeWUDriversInQualityUpdate", 0);
-                }
-                catch
-                {
-
-                }
-            }
             if (category == 7)
             {
                 Process.Start("cmd.exe", "/c \"reg delete \"HKCU\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32\" /f\"");
@@ -1748,47 +1619,6 @@ namespace MakuTweaker
                     localization.TryGetValue("ads", out string text);
                     labelinfo.Text = text;
                     Registry.CurrentUser.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\SearchSettings").SetValue("IsDynamicSearchBoxEnabled", 0);
-                }
-                catch
-                {
-
-                }
-            }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd4", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\clipchamp.clipchamp_yxz26nhyzhsrt");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.549981C3F5F10_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.bingnews_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.bingweather_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ECApp_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.gethelp_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.getstarted_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.microsoftsolitairecollection_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.microsoftstickynotes_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.people_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.powerautomatedesktop_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.todos_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowscamera_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowscommunicationsapps_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowsfeedbackhub_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowsmaps_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowssoundrecorder_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.yourphone_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoftcorporationii.quickassist_8wekyb3d8bbwe");
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoftwindows.client.webexperience_cw5n1h2txyewy");
-
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization").SetValue("DODownloadMode", 0);
                 }
                 catch
                 {
@@ -1841,48 +1671,6 @@ namespace MakuTweaker
 
                 }
             }
-            if (category == 3)
-            {
-                try
-                {
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upd44", out string text);
-                    labelinfo.Text = text;
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\clipchamp.clipchamp_yxz26nhyzhsrt", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.549981C3F5F10_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.bingnews_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.bingweather_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ECApp_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.gethelp_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.getstarted_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.microsoftsolitairecollection_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.microsoftstickynotes_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.people_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.powerautomatedesktop_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.todos_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowscamera_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowscommunicationsapps_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowsfeedbackhub_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowsmaps_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowssoundrecorder_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.yourphone_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoftcorporationii.quickassist_8wekyb3d8bbwe", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoftwindows.client.webexperience_cw5n1h2txyewy", false);
-                    Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Windows.CBSPreview_cw5n1h2txyewy", false);
-                    Registry.LocalMachine.DeleteSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned", false);
-
-                    Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization").SetValue("DODownloadMode", 1);
-                }
-                catch
-                {
-
-                }
-            }
             if (category == 7)
             {
                 Process.Start("cmd.exe", "/c \"reg add \"HKEY_CURRENT_USER\\Control Panel\\Desktop\\WindowMetrics\" /v CaptionHeight /t REG_SZ /d -330 /f\"");
@@ -1922,21 +1710,6 @@ namespace MakuTweaker
                     localization.TryGetValue("online", out string text);
                     labelinfo.Text = text;
                     Registry.CurrentUser.CreateSubKey(@"Software\Policies\Microsoft\Windows\Explorer").SetValue("DisableSearchBoxSuggestions", 1);
-                }
-                catch
-                {
-
-                }
-            }
-            if (category == 3)
-            {
-                try
-                {
-                    Process.Start("cmd.exe", "/c \"reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v ActiveHoursStart /t REG_DWORD /d 9 /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v ActiveHoursEnd /t REG_DWORD /d 2 /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseFeatureUpdatesStartTime /t REG_SZ /d \"2015-01-01T00:00:00Z\" /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseQualityUpdatesStartTime /t REG_SZ /d \"2015-01-01T00:00:00Z\" /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseUpdatesExpiryTime /t REG_SZ /d \"2077-01-01T00:00:00Z\" /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseFeatureUpdatesEndTime /t REG_SZ /d \"2077-01-01T00:00:00Z\" /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseQualityUpdatesEndTime /t REG_SZ /d \"2077-01-01T00:00:00Z\" /f && reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings /v PauseUpdatesStartTime /t REG_SZ /d \"2015-01-01T00:00:00Z\" /f\"");
-                    var languageCode = Properties.Settings.Default.languageCode ?? "en";
-                    var localization = Localization.LoadLocalization(languageCode, category);
-                    localization.TryGetValue("upds", out string text);
-                    labelinfo.Text = text;
                 }
                 catch
                 {

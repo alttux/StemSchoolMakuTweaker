@@ -483,6 +483,9 @@ namespace MakuTweaker
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
                         break;
@@ -496,7 +499,24 @@ namespace MakuTweaker
             {
                 pictureBox1.Visible = false;
             }
-            P10.Text = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "DisplayVersion", "Legacy 03/H1")?.ToString();
+            if(Properties.Settings.Default.languageCode == "es")
+            {
+                P1.Left += 50;
+                P2.Left += 50;
+                P3.Left += 50;
+                P4.Left += 50;
+                P5.Left += 50;
+                P6.Left += 50;
+                P7.Left += 50;
+                P8.Left += 50;
+                P9.Left += 50;
+                P10.Left += 50;
+                P11.Left += 50;
+                P12.Left += 50;
+                P13.Left += 50;
+                P14.Left += 50;
+            }
+            P10.Text = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "DisplayVersion", "Pre-2009")?.ToString();
         }
 
         private void Form6_FormClosed(object sender, FormClosedEventArgs e)

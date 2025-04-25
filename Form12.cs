@@ -167,6 +167,9 @@ namespace MakuTweaker
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
                         break;

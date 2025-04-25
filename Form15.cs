@@ -176,6 +176,9 @@ namespace MakuTweaker
                     case "en-US":
                         Properties.Settings.Default.languageCode = "en";
                         break;
+                    case string lang when lang.StartsWith("es-"):
+                        Properties.Settings.Default.languageCode = "es";
+                        break;
                     default:
                         Properties.Settings.Default.languageCode = "en";
                         break;
@@ -351,13 +354,10 @@ namespace MakuTweaker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.category = 3;
-            Properties.Settings.Default.form1pos = this.Location;
-            Properties.Settings.Default.Save();
-            Form1 f1 = new Form1();
-            f1.StartPosition = FormStartPosition.Manual;
-            f1.Location = this.Location;
-            f1.Show();
+            Form16 f16 = new Form16();
+            f16.StartPosition = FormStartPosition.Manual;
+            f16.Location = this.Location;
+            f16.Show();
             this.Hide();
         }
 
@@ -884,6 +884,11 @@ namespace MakuTweaker
                     Properties.Settings.Default.Save();
                 }
             }
+        }
+
+        private void R7S2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
